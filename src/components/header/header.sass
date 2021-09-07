@@ -1,0 +1,50 @@
+.header
+	display: flex
+	justify-content: space-between
+	padding-top: 50px
+	padding-bottom: 48px
+	border-bottom: 4px solid #252525
+	&__left
+		display: flex
+		align-items: center
+	&__right
+		display: flex
+		align-items: center
+	&__link
+		text-decoration: none
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		color: #252525
+		cursor: pointer
+		display: block
+		margin-right: 20px
+		transition: 0.3s all
+		&:hover
+			color: #a7a7a7
+		&:last-child
+			margin-right: 0px
+	&__line
+		width: 2px
+		height: 26px
+		background: #252525
+		margin-left: 10px
+		margin-right: 10px
+	&__blog
+		font-style: normal
+		font-weight: 600
+		font-size: 19px
+		text-transform: uppercase
+		color: #252525
+		letter-spacing: 0.12em
+@media screen and (max-width: 769px)
+	.header
+		display: block
+		&__right
+			margin-top: 20px
+			display: block
+		&__link
+			margin-right: 0
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0px

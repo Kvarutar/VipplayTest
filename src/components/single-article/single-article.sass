@@ -1,0 +1,111 @@
+.article-single
+    padding-top: 75px
+    &__date
+        font-size: 12px
+        line-height: 16px
+        margin-bottom: 20px
+    &__title
+        max-width: 916px
+        font-size: 34px
+        line-height: 40px
+        font-weight: 800
+        margin-top: 30px
+        margin-bottom: 30px
+    &__content
+        max-width: 812px
+    &__paragraph
+        font-size: 18px
+        line-height: 28px
+        margin-top: 30px
+        margin-bottom: 30px
+        p
+            a
+                font-weight: 700
+                user-select: text
+                transition: all .3s ease
+                text-decoration-color: currentColor
+                cursor: pointer
+                color: #252525
+                &:hover
+                    text-decoration-color: white
+    &__heading
+        font-size: 29px
+        line-height: 30px
+        font-weight: 800
+        margin-top: 50px
+        margin-bottom: 30px
+    &__img
+        position: relative
+        img
+            width: 100%
+        &-copyright
+            font-size: 12px
+            line-height: 16px
+            margin-top: 16px
+        &-caption
+            position: absolute
+            top: 0
+            right: -416px
+            text-align: right
+            width: 376px
+            margin-top: 0
+            border-top: 2px solid #252525
+            padding-top: 12px
+            font-style: italic
+            font-size: 14px
+            line-height: 19px
+    &__slider
+        &-item
+            max-width: 812px
+    &__tags
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        margin-top: 50px
+        margin-bottom: 50px
+        &-item
+            cursor: pointer
+            margin-bottom: 10px
+            display: block
+            font-size: 13px
+            line-height: 40px
+            color: #252525
+            color: var(--colorBlack)
+            text-decoration: none
+            background: #efefef
+            padding: 0 18px
+            white-space: nowrap
+            border-radius: 8px
+            margin-right: 10px
+    &__quote
+        margin: 50px 0
+        background: #efefef
+        padding: 70px 30px 30px 40px
+        box-sizing: border-box
+        position: relative
+        &::before
+            content: ""
+            width: 30px
+            height: 30px
+            position: absolute
+            top: 33px
+            left: 43px
+            background: url(quote.svg) no-repeat 0 0
+            background-size: 100% auto
+        &-text
+            width: 520px
+            max-width: 100%
+            font-style: italic
+            font-weight: 600
+            font-size: 19px
+            line-height: 26px
+        &-author
+            display: block
+            width: 520px
+            max-width: 100%
+            font-style: italic
+            font-size: 14px
+            line-height: 19px
+            margin-top: 30px
+            &::before
+                content: "— "
